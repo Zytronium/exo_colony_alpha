@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #041223;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    position: relative;
+    background: url('colony-image-no-overlay.jpg') no-repeat center top/cover;
+    min-height: 80vh; /* Ensure hero section is at least as tall as the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(transparent, #041223);
+}
+.hero h1 {
+    font-size: 4em;
+    color: cyan;
+    position: relative;
+    z-index: 1;
+}
+.hero p {
+    font-size: 1.4em;
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: cyan;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.about, .apply, .countdown {
+    padding: 50px 20px;
+    margin-left: 10vmax;
+    margin-right: 10vmax;
+}
+.apply form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apply input, .apply textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+.apply button {
+    background-color: cyan;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.countdown #timer {
+    font-size: 2em;
+    font-weight: bold;
+}
+.gradient-text {
+    background: linear-gradient(to right, red, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+strong {
+    color: goldenrod;
+}
+hr {
+    width: 80%;
+    border: 1px solid cyan;
+    opacity: 33%;
+}
